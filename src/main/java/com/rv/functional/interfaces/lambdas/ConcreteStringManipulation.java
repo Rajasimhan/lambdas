@@ -11,7 +11,7 @@ public class ConcreteStringManipulation {
 
     public void stringReplace(String input1, String input2) {
         commonManipulation(
-                (input3, input4) -> input3.replace(" ", input4),
+                (input3, input4) -> input3.replace("_", input4),
                 input1,
                 input2
         );
@@ -20,6 +20,6 @@ public class ConcreteStringManipulation {
 
     private void commonManipulation(StringManipulation stringManipulation, String input1, String input2) {
         System.out.println("input1 = " + input1 + ", input2 = " + input2);
-        System.out.println(stringManipulation.Manipulate(input1, input2));
+        System.out.println(stringManipulation.manipulate(input1, input2));
     }
 }
